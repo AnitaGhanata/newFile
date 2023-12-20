@@ -327,13 +327,30 @@
     let n1= "University";
     let n2= "v";// occurrence
     let n3 ="r"; // replace
+    let n4=" ";
     for(let i=0;i<n1.length;i++){
         if(n2==n1[i]){
-            n1= n1.substring(0, i) + n3 + n1.substring(i + 1);
+            n4= n1.substring(0, i) + n3 + n1.substring(i + 1);
             } 
        
      } 
-     console.log(n1);
+     console.log(n4);
+     
+     // replace last occurrence of a character with another in a string
+     let v1= "University";
+    let v2= "i";// occurrence
+    let v3 ="r"; // replace
+    let v4=" ";
+    let last1=-1;
+    for(let i=0;i<n1.length;i++){
+        if(v2==v1[i]){
+            last1=i;
+            v4= v1.substring(0, last1) + v3 + v1.substring(last1 + 1);
+            
+            } 
+       
+     } 
+     console.log(v4);
      
 
      
