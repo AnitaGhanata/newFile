@@ -327,11 +327,9 @@
     let n1= "University";
     let n2= "v";// occurrence
     let n3 ="r"; // replace
-    let n4="";
     for(let i=0;i<n1.length;i++){
         if(n2==n1[i]){
-             n1[i]=n3;
-             console.log(n1[i],n3);
+            n1= n1.substring(0, i) + n3 + n1.substring(i + 1);
             } 
        
      } 
@@ -371,6 +369,10 @@
             
     //         console.log(b1);
 
-
 </script>
 </html>
+
+
+
+
+
