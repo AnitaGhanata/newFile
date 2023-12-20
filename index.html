@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>Javascript</h2>
+
+    <p id="demo">how to change the Javascript element content</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <p> JavaScript can change HTML attribute values.</p>
+    
+    <p> In this case Javascript changes the value of the src attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fbright-glowing-incandescent-light-bulb-on-792745633&psig=AOvVaw0n0vlmraMeuEeqDDL7NHN4&ust=1703048677743000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCNC675jdmoMDFQAAAAAdAAAAABAE'"></button>
+    <img id="myImage" src="" style="width: 100px;">
+</body>
+<script>
+    //  1. find length
+    let string = "Anita";
+    let len = string.length;
+    console.log(len);
+
+
+    // 2. copy one string to another
+    let s1= "Javascript";
+    let n= s1.length;
+    let s2 = " ";
+    for(let i=0; i<n;i++){
+        s2 += s1[i];
+    }
+    console.log(s2);
+
+    // 3. concatenate two string
+    let a= "Hello";
+    let b= "Javascript";
+    console.log(a + " "+ b);
+
+    // 4. compare two strings
+    let str1 = "Apple";
+    let str2 = "Apple";
+    if(str1==str2){
+        result= "string are same";
+    }
+    else{
+        result = "string are not same"
+    }
+    console.log(result);
+
+    // 5. convert lowercase to uppercase
+    let st1 = " FRUITS";
+    console.log(st1.toLowerCase());
+  
+    // 6. convert upper to lowercase
+    let st2 = "laptop";
+    console.log(st2.toUpperCase());
+
+    // 8. count vowels and consonants
+    let p= "NoteBook";
+    let len1= p.length;
+    let vowels = 0;
+     let consonants=0;
+    for(let i=0;i<len1;i++){
+        if(p[i]=="a"|| p[i]=="e"|| p[i]=="i"|| p[i]=="o"|| p[i]=="u"){
+            vowels += 1;
+        }
+        else{
+            consonants +=1;
+        }
+    }
+    console.log(vowels, consonants);
+
+
+    // 9. find reverse of string
+    let d = "Facebook";
+    let rev=" ";
+    
+    for(let i=d.length-1;i>=0;i--){
+        rev+= d[i];
+    }
+    console.log(rev);
+
+    // 10. count totle no. of words
+    let t= ["apple","orange","mango"];
+    let count= 0;
+    for(let i=0;i<t.length;i++){
+        count +=1;
+    }
+     console.log(count);
+
+
+
+     // 11. check palindrome
+     let A = "RACECAR";
+     let ans2= " ";
+     for(let i=0;i<A.length;i++){
+        for(let j=A.length-1;j>=0;j--){
+            if(A[i]==A[j]){
+                ans2 = "string is palindrome"; 
+            }
+            else{
+                ans2 = "string is not palindrome"
+            }
+        }
+        console.log(ans2);
+     }
+
+     // 12. reverse order of wordsin string
+
+     let cap = ["racecar","apple", "phone"];
+     let v = " ";
+     for(let i=cap.length-1;i>=0;i--){
+            v = v+ " " + cap[i]; 
+     }
+     console.log( v);
+
+     // 13. find first occurrences of a character in given string
+
+     let char= "lowercase";
+     let char1 = "o";
+     let ans3 = " ";
+     for(let i=0;i<char.length;i++){
+        if(char1==char[i]){
+            ans3 = i;
+        }
+       
+     } 
+     console.log(ans3);
+
+
+     // 14. find last occurrences of a char in given string
+        let chart= "googole";
+        let a1= "o";
+        let last= -1;
+        for(let i=0;i<chart.length;i++) {
+            if(a1==chart[i]){
+                last= i;
+            }
+        }
+        console.log(last);
+
+
+    // 15.count all occurrences of a char in string
+      let qus = "https://docs.google.com/document/d/1KInyKQqgsBHXFWen15pl3wUoAvqvvUo3PHjFMITsrMY/edit"
+      let p1= "o";
+      let total=0;
+      for(let i=0;i<qus.length;i++) {
+            if(p1==qus[i]){
+                total+= 1;
+            }
+        }
+        console.log(total);
+    // 17.remove first occurrence of a character from string.
+            let e1= "University";
+            let e2= "i";
+
+            for (let i = 0; i < e1.length; i++) 
+            {
+                if (e2==e1.charAt(i)) 
+                {
+                    e1 = e1.substring(0, i) + e1.substring(i + 1);
+                    break;
+                }
+            }
+            
+            console.log(e1);
+
+
+
+
+    // 18. remove last occurrence of a character from string.
+               
+        let r1= "University";
+        let r2= "i";
+        for (let i = r1.length- 1; i > -1; i--)
+                {
+                    if (r2== r1.charAt(i)) 
+                    {
+                        r1= r1.substring(0, i) + r1.substring(i + 1);
+                        break;
+                    }
+                }
+        console.log(r1);
+
+    // 19. remove all occurrences of a character from string.
+            let t1= "University";
+            let t2= "i";
+
+            for (let i = 0; i < t1.length; i++) 
+            {
+                if (t2==t1.charAt(i)) 
+                {
+                    t1 = t1.substring(0, i) + t1.substring(i + 1);
+                    break;
+                }
+            }
+            for (let i = t1.length- 1; i > -1; i--)
+                {
+                    if (t2== t1.charAt(i)) 
+                    {
+                        t1= t1.substring(0, i) + r1.substring(i + 1);
+                        break;
+                    }
+                }
+            console.log(t1);
+
+    // 20. find first occurrence of a word in a given string
+    let f1= ["University","School","Book","Table","School"]
+    let f2 = "School";
+    let f3 = " ";
+    for(let i=0;i<f1.length;i++){
+        if(f2==f1[i]){
+            f3 = i;
+        }
+       
+     } 
+     console.log(f3);
+
+    // 21. find last occurrence of a word in a given string
+    let u1= ["University","School","Book","School","Table","School"]
+    let u2 = "School";
+    let u3 = -1;
+    for(let i=0;i<u1.length;i++){
+        if(u2==u1[i]){
+            u3= i;
+            }
+    }
+    console.log(u3);
+
+    // 22. count all occurrences of a word in given string
+    let x1= ["University","School","Book","School","Table","School"]
+    let x2 = "School";
+    let x3 = 0;
+    for(let i=0;i<x1.length;i++){
+        if(x2==x1[i]){
+            x3 += 1;
+        }
+       
+     } 
+     console.log(x3);
+
+
+    //  remove all repeated character from string.
+    // let v1= "University";
+    // let v2 =0;
+    // let v3="";
+    // for(let i=0;i<v1.length;i++){
+    //     let j;
+    //     for(j=0;j<i;j++){
+    //         if(v1[i]==v1[j]){
+    //             break;
+    //         }
+    //     }
+
+    //     if(j==i){
+    //         v1[v2++]=v1[i];
+    //     }
+    // }
+    // console.log(v1[v2++]);
+
+    
+
+     //  find total number of alphabets, digits or special character in a string.
+     let h1 = "as3bi#3/wer2bhjgj2@"
+     let alph=0;
+     let digit=0;
+     let spec=0;
+     let answr= 0;
+     for(let i=0;i<h1.length;i++){
+        if(h1[i]>='a' && h1[i]<='z'|| h1[i]>='A'&& h1[i]<='Z'){
+            alph +=1;
+
+        }
+        else if(h1[i]>'0' && h1[i]<='9'){
+            digit+=1;
+        }
+        else{
+            spec+=1;
+        }
+        
+        
+
+     }
+     console.log(alph, digit, spec);
+     
+     //  toggle case
+     let m1= "UniVerSity";
+     let toggled="";
+    
+     
+     for(let i=0;i<m1.length;i++){
+        console.log(m1)
+        if(m1[i]==(m1[i].toUpperCase())){
+            toggled+= m1[i].toLowerCase();
+            
+        }
+        else{
+            toggled+=m1[i].toUpperCase();
+            
+        }
+     }
+     console.log(toggled);
+
+     
+    // replace last occurrence of a character with another in a string.
+    
+     // find lowest occurrences of a char in string
+
+
+     // 16. search all occurrences of a char in string
+      let q1 = "googloe"
+      let q2= "g";
+      let q3 =" ";
+      for(let i=0;i<q1.length;i++){
+        if(q2 == q1[i]){
+            q3= i;
+            break;
+        }
+       
+     } 
+     console.log(q3);
+    // replace first occurrence of a character with another in a string.
+    let n1= "University";
+    let n2= "v";// occurrence
+    let n3 ="r"; // replace
+    let n4="";
+    for(let i=0;i<n1.length;i++){
+        if(n2==n1[i]){
+             n1[i]=n3;
+             console.log(n1[i],n3);
+            } 
+       
+     } 
+     console.log(n1);
+     
+
+     
+
+    
+
+    // find highest occurrences of a char in string
+    // let q2= "anitaghanata";
+    // let max= 1, count3=0, q3=0;
+    // for(let i=0;i<q2.length;i++){
+    //     for(let j=i+1;j<q2.length;j++){
+    //         if(q2[i]==q2[j]){
+    //             count3+=1;    
+    //         }
+    //         if(max>count3){
+    //                 q3= max;
+    //             }
+    //     }
+    // }
+    // console.log(q3);
+
+     // 23. remove first occurrence of a word from string.
+    // let b1= ["University","School","Book","School","Table","School"]
+    // let b2 = "School";
+    // for (let i = 0; i < b1.length; i++) 
+    //         {
+    //             if (b2==b1[i]) 
+    //             {
+    //                 b1 = b1.substring(0, i) + b1.substring(i + 1);
+    //                 break;
+    //             }
+    //         }
+            
+    //         console.log(b1);
+
+
+</script>
+</html>
