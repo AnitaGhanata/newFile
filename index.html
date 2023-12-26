@@ -322,56 +322,27 @@
      console.log(v4);
      
 
-   
+    //replace all occurrences of a character with another in a string
 
-     
-     
-    // count frequency of each character in a string.
-    // let j1= "Pictureperfect";
-    
-    // for(i = 0; i <j1.length; i++) {  
-    //     let freq = 1; 
-    //         for(let j = i+1; j <j1.length; j++) {  
-    //             if(j1[i] == j1[j]) {  
-    //                 freq[i]++;  
-    //             }
-    //         }
-    //     }
-    //     console.log(freq);
-
-
-      //replace all occurrences of a character with another in a string
-
-    // let g1= "University";
-    // let g2= "i";// occurrence
-    // let g3 ="r"; // replace
-    // let g4=" ";
-    // let g5= " ";
-    // for(let i=0;i<g1.length;i++){
-    //     if(g2==g1[i]){
-    //         g4= g1.substring(0, i) + g3+ g1.substring(i+1);
-    //         break;
-    //         } 
+    let g1= "University";
+    let g2= "i";// occurrence
+    let g3 ="r"; // replace
+    let g4 =" ";
+    for(let i=0;i<g1.length;i++){
+        if(g1[i]==g2){
+           g4= g4+ g3;
+            } 
+        else{
+            g4= g4+ g1[i];
+        }
         
        
-    //  } 
-    //  console.log(g4);    
-    //  let l1=-1;
-     
-    //  for(let i=0;i<g1.length;i++){
-    //     if(g2==g1[i]){
-    //         l1=i;
-    //         g5=  g3 + g1.substring(l1 + 1);
-            
-    //         } 
-               
-    //  } 
-     
+     } 
+     console.log(g4);    
       
      
-     
 
-    // 
+     
  
    
 
@@ -407,100 +378,6 @@
      } 
      
 
-
-     
-     
- // 23. remove first occurrence of a word from string.
-    let b1= ["University","School","Book","School","Table","School"]
-    let b2 = "School";
-    let b3 = " ";
-    for (let i = 0; i < b1.length; i++) 
-            {
-                if (b2==b1[i]) 
-                {
-                    b3= i;
-                    // b1 = b1.substr(0, i) + b1.substr(i + 1);
-                    
-                }
-            }
-            console.log(b3);
-
-        //find highest occurrences of a char in string
-        let as2= "ainaitaiaiahiainaia"; 
-        let maximum= as2.charAt(0); 
-        let freq=[];
-        let max=freq[0];
-            for(i = 0; i < as2.length; i++) {  
-                freq[i] = 1;  
-                    for(j = i+1; j < as2.length; j++) {  
-                        if(as2[i] == as2[j]) {  
-                            freq[i]++;  
-                                
-                        }
-                    }
-                } 
-         
-        for(i = 0; i <freq.length; i++) {  
-                if(max < freq[i]) {  
-                    max = freq[i];  
-                    maximum = as2[i];  
-                }  
-            }  
-                
-            console.log(maximum);
-
-
-        //find lowest frequency character in a string
-        let as1= "chartacter"; 
-        let minimum= as1.charAt(0); 
-        let freq1=[];
-        let min = freq1[0];
-            for(i = 0; i < as1.length; i++) {  
-                freq1[i] = 1;  
-                    for(j = i+1; j < as1.length; j++) {  
-                        if(as2[i] == as1[j]) {  
-                            freq1[i]++;
-                            
-                                 
-                        }
-                    }
-                } 
-                
-                for(i = 0; i <freq1.length; i++) { 
-                    if(min > freq1[i]&& freq[i] != '0') { 
-                         
-                        min = freq1[i];
-
-                        minimum = as1[i];  
-            }  
-        }
-            console.log(minimum);
-
-        
-    //count frequency of each character in a string.
-    //  let c1 = "University";
-    //  let freq2=[];     
-    //  let c2 =" ";
-    //     for(let i = 0; i <c1.length; i++) 
-    //     {  
-    //         freq2[i] = 1;  
-    //         for(let j = i+1; j<c1.length; j++) 
-    //         {  
-    //             if(c1[i] == c1[j])
-    //             {  
-    //                 freq2[i]++;  
-    //             }  
-    //         }  
-    //     }            
- 
-    //     for(let i = 0; i <freq2.length; i++) 
-    //     {  
-    //         if(c1[i] != ' ' && c1[i] != '0') {
-    //             c2= freq2[i];
-    //         } 
-    //         console.log(c2);     
-    //     }  
-        
   
 // trim leading white space characters from given string
     let j1 = "   University";
@@ -528,28 +405,28 @@ for (let i = w1.length-1; i>=0; i--) {
     console.log(w2);
 
 //trim both leading and trailing white space characters from given string
-let y1= " Google ";
-console.log(y1);
-let y2="";
-let y3=" ";
-for (let i = 0; i< y1.length-1; i++) {
-    if (y1.charAt(i) != " ") {
-        y2= y1.substring(i);
-            break;
-        }
-    }
+// let y1= " Google ";
+// console.log(y1);
+// let y2="";
+// let y3=" ";
+// for (let i = 0; i< y1.length-1; i++) {
+//     if (y1.charAt(i) != " ") {
+//         y2= y1.substring(i);
+//             break;
+//         }
+//     }
    
 
 
-for (let i = y1.length-1; i>=0; i--) {
-    if (y1.charAt(i) != " ") {
-        y2= y1.substring(0,i+1);
-            break;
-        }
+// for (let i = y1.length-1; i>=0; i--) {
+//     if (y1.charAt(i) != " ") {
+//         y2= y1.substring(0,i+1);
+//             break;
+//         }
         
-}
+// }
     
-    console.log(y2);
+//     console.log(y2);
 
 //remove all extra blank spaces from given string
     let fn ="t og gle";
@@ -566,17 +443,158 @@ for (let i = y1.length-1; i>=0; i--) {
 
 
 
-//  remove all repeated character from string.
-let ct= "University";
-     let ct1=" ";
-    for (let i = 0; i < ct.length; i++) {
-        for (let j = i+1; j < ct.length; j++) {
-                if (ct[i] = ct[j]) {
-                    ct1 = ct1+ ct1[i];
+
+//find highest occurrences of a char in string
+    let gh = "srirgginttg"; 
+    let maximum= gh[0]; 
+    let freq=[];
+        for(i = 0; i < gh.length; i++) {  
+            freq[i] = 1;  
+                for(j = i+1; j < gh.length; j++) {  
+                    if(gh[i] == gh[j]) {  
+                        freq[i]++;  
+                            
+                    }
                 }
+            } 
+    let max= freq[0];
+    for(i = 0; i <freq.length; i++) {  
+            if(max < freq[i]) {  
+                max = freq[i];  
+                maximum = gh[i];  
+            }  
+        }  
+            
+        console.log(maximum);
+
+
+ //find lowest frequency character in a string
+        let as1= "rsrirsgngnttg"; 
+        let minimum= as1.charAt(0); 
+        let freq1=[];
+        
+            for(i = 0; i < as1.length; i++) {  
+                freq1[i] = 1;  
+                    for(j = i+1; j < as1.length; j++) {  
+                        if(as1[i] == as1[j]) {  
+                            freq1[i]++;
+                            
+                                 
+                        }
+                    }
+                } 
+                let min = freq1[0];       
+                for(i = 0; i <freq1.length; i++) { 
+                    if(min > freq1[i]&& freq[i] != '0') { 
+                         
+                        min = freq1[i];
+
+                        minimum = as1[i];  
+            }  
+        }
+            console.log(minimum);
+
+
+//count frequency of each character in a string.
+     let c1 = "University";
+     let freq2=[];     
+        for(let i = 0; i <c1.length; i++) 
+        {  
+            freq2[i] = 1;  
+            for(let j = i+1; j<c1.length; j++) 
+            {  
+                if(c1[i] == c1[j])
+                {  
+                    freq2[i]++;  
+                }  
+            }  
+        }            
+        let c2= c1[0];
+        for(let i = 0; i <freq2.length; i++) 
+        {  
+            if(c1[i] != ' ' && c1[i] != '0') {
+                c2= freq2[i];
+            } 
+            console.log(c1[i] + "  " + c2);   
+        }  
+
+
+
+    
+
+
+
+//  remove all repeated character from string.
+let ct= "Univeersitty";
+    console.log(ct);
+    let obj=" ";
+    
+    for (let i = 0; i < ct.length; i++) {
+        let cnt= 0;
+        
+        for (let j = 0; j <obj.length; j++) {
+           
+            if (ct[i] == obj[j]) 
+
+            {
+                
+                continue;
+            }
+            else{
+                cnt++;
+                
+            }
+            
+        }
+        if(cnt==obj.length){
+        
+                obj= obj+ct[i];
             }
         }
-        console.log(ct1);
+       
+       
+  console.log(obj); 
+
+
+
+// 23. remove first occurrence of a word from string.
+  let ba1= "CollegesareunderareUniversity"
+  "CollegesareunderareUniversity"
+  
+    let ba2 = "are";
+    let cntt =0;
+    let ba3 ="";
+    let xxx = ""
+    let cnt_y = 0
+    for(let i=cntt;i< ba1.length;i++){
+       console.log(i)
+        if(ba3.length!= ba2.length){
+            ba3= ba3+ba1[i];
+            cnt_y = cnt_y + 1;
+        }
+        if(ba3 == ba2){
+            xxx = xxx + ""
+            cntt = cntt + cnt_y
+            ba3 = ""
+        }
+        if(ba3.length == ba2.length){
+            xxx = xxx + ba3
+            cntt = cntt + 1
+            ba3 = ""
+        }
+        console.log(cntt)
+        console.log(xxx)
+    }
+   
+   
+
+
+
+
+       
+
+        
+            
 </script>
 </html>
 
