@@ -21,28 +21,23 @@
 </body>
 <script>
     //  1. find length
-    let string = "Anita";
-    let len = string.length;
+    let string = "Anita",len = string.length;
     console.log(len);
 
 
     // 2. copy one string to another
-    let s1= "Javascript";
-    let n= s1.length;
-    let s2 = " ";
+    let s1= "Javascript", n= s1.length, s2 = " ";
     for(let i=0; i<n;i++){
         s2 += s1[i];
     }
     console.log(s2);
 
     // 3. concatenate two string
-    let a= "Hello";
-    let b= "Javascript";
+    let a= "Hello", b= "Javascript";
     console.log(a + " "+ b);
 
     // 4. compare two strings
-    let str1 = "Apple";
-    let str2 = "Apple";
+    let str1 = "Apple", str2 = "Apple";
     if(str1==str2){
         result= "string are same";
     }
@@ -60,10 +55,7 @@
     console.log(st2.toUpperCase());
 
     // 8. count vowels and consonants
-    let p= "NoteBook";
-    let len1= p.length;
-    let vowels = 0;
-     let consonants=0;
+    let p= "NoteBook", len1= p.length; vowels = 0, consonants=0;
     for(let i=0;i<len1;i++){
         if(p[i]=="a"|| p[i]=="e"|| p[i]=="i"|| p[i]=="o"|| p[i]=="u"){
             vowels += 1;
@@ -76,8 +68,7 @@
 
 
     // 9. find reverse of string
-    let d = "Facebook";
-    let rev=" ";
+    let d = "Facebook",rev=" ";
     
     for(let i=d.length-1;i>=0;i--){
         rev+= d[i];
@@ -85,8 +76,7 @@
     console.log(rev);
 
     // 10. count totle no. of words
-    let t= ["apple","orange","mango"];
-    let count= 0;
+    let t= ["apple","orange","mango"], count= 0;
     for(let i=0;i<t.length;i++){
         count +=1;
     }
@@ -95,8 +85,7 @@
 
 
      // 11. check palindrome
-     let A = "RACECAR";
-     let ans2= " ";
+     let A = "RACECAR", ans2= " ";
      for(let i=0;i<A.length;i++){
         for(let j=A.length-1;j>=0;j--){
             if(A[i]==A[j]){
@@ -111,8 +100,7 @@
 
      // 12. reverse order of wordsin string
 
-     let cap = ["racecar","apple", "phone"];
-     let v = " ";
+     let cap = ["racecar","apple", "phone"], v = " ";
      for(let i=cap.length-1;i>=0;i--){
             v = v+ " " + cap[i]; 
      }
@@ -120,9 +108,7 @@
 
      // 13. find first occurrences of a character in given string
 
-     let char= "lowercase";
-     let char1 = "o";
-     let ans3 = " ";
+     let char= "lowercase", char1 = "o", ans3 = " ";
      for(let i=0;i<char.length;i++){
         if(char1==char[i]){
             ans3 = i;
@@ -133,9 +119,7 @@
 
 
      // 14. find last occurrences of a char in given string
-        let chart= "googole";
-        let a1= "o";
-        let last= -1;
+        let chart= "googole", a1= "o", last= -1;
         for(let i=0;i<chart.length;i++) {
             if(a1==chart[i]){
                 last= i;
@@ -146,8 +130,7 @@
 
     // 15.count all occurrences of a char in string
       let qus = "https://docs.google.com/document/d/1KInyKQqgsBHXFWen15pl3wUoAvqvvUo3PHjFMITsrMY/edit"
-      let p1= "o";
-      let total=0;
+      let p1= "o", total=0;
       for(let i=0;i<qus.length;i++) {
             if(p1==qus[i]){
                 total+= 1;
@@ -155,8 +138,7 @@
         }
         console.log(total);
     // 17.remove first occurrence of a character from string.
-            let e1= "University";
-            let e2= "i";
+            let e1= "University", e2= "i";
 
             for (let i = 0; i < e1.length; i++) 
             {
@@ -174,8 +156,7 @@
 
     // 18. remove last occurrence of a character from string.
                
-        let r1= "University";
-        let r2= "i";
+        let r1= "University", r2= "i";
         for (let i = r1.length- 1; i > -1; i--)
                 {
                     if (r2== r1.charAt(i)) 
@@ -210,8 +191,7 @@
 
     // 20. find first occurrence of a word in a given string
     let f1= ["University","School","Book","Table","School"]
-    let f2 = "School";
-    let f3 = " ";
+    let f2 = "School", f3 = " ";
     for(let i=0;i<f1.length;i++){
         if(f2==f1[i]){
             f3 = i;
@@ -222,8 +202,7 @@
 
     // 21. find last occurrence of a word in a given string
     let u1= ["University","School","Book","School","Table","School"]
-    let u2 = "School";
-    let u3 = -1;
+    let u2 = "School", u3 = -1;
     for(let i=0;i<u1.length;i++){
         if(u2==u1[i]){
             u3= i;
@@ -233,8 +212,7 @@
 
     // 22. count all occurrences of a word in given string
     let x1= ["University","School","Book","School","Table","School"]
-    let x2 = "School";
-    let x3 = 0;
+    let x2 = "School",  x3 = 0;
     for(let i=0;i<x1.length;i++){
         if(x2==x1[i]){
             x3 += 1;
@@ -250,10 +228,7 @@
 
      //  find total number of alphabets, digits or special character in a string.
      let h1 = "as3bi#3/wer2bhjgj2@"
-     let alph=0;
-     let digit=0;
-     let spec=0;
-     let answr= 0;
+     let alph=0, digit=0, spec=0, answr= 0;
      for(let i=0;i<h1.length;i++){
         if(h1[i]>='a' && h1[i]<='z'|| h1[i]>='A'&& h1[i]<='Z'){
             alph +=1;
@@ -272,8 +247,7 @@
      console.log(alph, digit, spec);
      
      //  toggle case
-     let m1= "UniVerSity";
-     let toggled="";
+     let m1= "UniVerSity", toggled="";
     
      
      for(let i=0;i<m1.length;i++){
@@ -293,9 +267,7 @@
      
     // replace first occurrence of a character with another in a string.
     let n1= "University";
-    let n2= "i";// occurrence
-    let n3 ="r"; // replace
-    let n4=" ";
+    let n2= "i",n3 ="r", /* occurrence,replace */ n4=" ";
     for(let i=0;i<n1.length;i++){
         if(n2==n1[i]){
             n4= n1.substring(0, i) + n3 + n1.substring(i + 1);
@@ -307,10 +279,7 @@
      
      // replace last occurrence of a character with another in a string
      let v1= "University";
-    let v2= "i";// occurrence
-    let v3 ="r"; // replace
-    let v4=" ";
-    let last1=-1;
+    let v2= "i", v3 ="r", v4=" ", last1=-1;
     for(let i=0;i<n1.length;i++){
         if(v2==v1[i]){
             last1=i;
@@ -325,9 +294,7 @@
     //replace all occurrences of a character with another in a string
 
     let g1= "University";
-    let g2= "i";// occurrence
-    let g3 ="r"; // replace
-    let g4 =" ";
+    let g2= "i", g3 ="r", g4 =" ";
     for(let i=0;i<g1.length;i++){
         if(g1[i]==g2){
            g4= g4+ g3;
@@ -338,18 +305,12 @@
         
        
      } 
-     console.log(g4);    
+      console.log(g4);    
       
-     
-
-     
- 
-   
-
+    
     //16. search all occurrences of a char in string
     let q1 = "googloe"
-      let q2= "g";
-      let q3 = " ";
+    let q2= "g", q3 = " ";
       for(i=0;i< q1.length;i++)
 		{
 			if(q2 == q1[i]) {
@@ -368,8 +329,7 @@
       
     // search all occurrences of a word in given string.
     let k1= ["University","School","Book","Table","School"]
-    let k2 = "School";
-    let k3 = " ";
+    let k2 = "School", k3 = " ";
     for(let i=0;i<k1.length;i++){
         if(k2==k1[i]){
             k3 = i;
@@ -381,7 +341,6 @@
   
 // trim leading white space characters from given string
     let j1 = "   University";
-
     let j2 = " ";
     for (let i = 0; i< j1.length; i++) {
         if (j1[i] != " ") {
@@ -404,29 +363,6 @@ for (let i = w1.length-1; i>=0; i--) {
     }
     console.log(w2);
 
-//trim both leading and trailing white space characters from given string
-// let y1= " Google ";
-// console.log(y1);
-// let y2="";
-// let y3=" ";
-// for (let i = 0; i< y1.length-1; i++) {
-//     if (y1.charAt(i) != " ") {
-//         y2= y1.substring(i);
-//             break;
-//         }
-//     }
-   
-
-
-// for (let i = y1.length-1; i>=0; i--) {
-//     if (y1.charAt(i) != " ") {
-//         y2= y1.substring(0,i+1);
-//             break;
-//         }
-        
-// }
-    
-//     console.log(y2);
 
 //remove all extra blank spaces from given string
     let fn ="t og gle";
@@ -446,8 +382,7 @@ for (let i = w1.length-1; i>=0; i--) {
 
 //find highest occurrences of a char in string
     let gh = "srirgginttg"; 
-    let maximum= gh[0]; 
-    let freq=[];
+    let maximum= gh[0], freq=[];
         for(i = 0; i < gh.length; i++) {  
             freq[i] = 1;  
                 for(j = i+1; j < gh.length; j++) {  
@@ -470,8 +405,7 @@ for (let i = w1.length-1; i>=0; i--) {
 
  //find lowest frequency character in a string
         let as1= "rsrirsgngnttg"; 
-        let minimum= as1.charAt(0); 
-        let freq1=[];
+        let minimum= as1.charAt(0),freq1=[];
         
             for(i = 0; i < as1.length; i++) {  
                 freq1[i] = 1;  
@@ -525,8 +459,7 @@ for (let i = w1.length-1; i>=0; i--) {
 
 
 //  remove all repeated character from string.
-let ct= "Univeersitty";
-    console.log(ct);
+    let ct= "Univeersitty";
     let obj=" ";
     
     for (let i = 0; i < ct.length; i++) {
@@ -536,8 +469,7 @@ let ct= "Univeersitty";
            
             if (ct[i] == obj[j]) 
 
-            {
-                
+            { 
                 continue;
             }
             else{
@@ -558,42 +490,53 @@ let ct= "Univeersitty";
 
 
 // 23. remove first occurrence of a word from string.
-  let ba1= "CollegesareunderareUniversity"
-  "CollegesareunderareUniversity"
-  
-    let ba2 = "are";
-    let cntt =0;
-    let ba3 ="";
-    let xxx = ""
-    let cnt_y = 0
-    for(let i=cntt;i< ba1.length;i++){
-       console.log(i)
-        if(ba3.length!= ba2.length){
-            ba3= ba3+ba1[i];
-            cnt_y = cnt_y + 1;
+    let ba1= "Collegesareunderare"
+    let ba2 = "are",x = "", found = 'false';
+    for(let i=0;i< ba1.length;i++){
+        let count = 0;
+        for(let j = 0;j< ba2.length;j++){
+            if(found == 'true'){
+                break;
+            }
+            if(ba1[i + j] == ba2[j]){
+                count = count + 1;
+            }
+            if(count == ba2.length){
+                i = i + count + 1;
+                found = 'true';
+            }
         }
-        if(ba3 == ba2){
-            xxx = xxx + ""
-            cntt = cntt + cnt_y
-            ba3 = ""
-        }
-        if(ba3.length == ba2.length){
-            xxx = xxx + ba3
-            cntt = cntt + 1
-            ba3 = ""
-        }
-        console.log(cntt)
-        console.log(xxx)
+        x = x + ba1[i];
     }
-   
-   
+    console.log(x);
 
-
-
-
+//remove last occurrence of a word in given string.
+    let text= "Coarellegesareunderar";
+    let text1 = "are", text2 = "",founds = 'false';
+    for(let i=text.length-1;i>=0;i--){
+        let count = 0, xyz = 0;
+        for(let j=text1.length-1;j>=0;j--){
+            if(founds == 'true'){
+                break;
+            }
+            if(text[i - xyz] == text1[j]){
+                count = count + 1;
+            }
+            if(count == text1.length){
+                i = i - count;
+                founds = 'true';
+            }
+            xyz++;
+        }
+       text2= text2+ text[i];
        
-
-        
+    }
+    console.log(text2)
+    let text_z = "";
+    for(let k=text2.length-1;k>=0;k--){
+        text_z = text_z + text2[k];
+    }
+    console.log(text_z);
             
 </script>
 </html>
