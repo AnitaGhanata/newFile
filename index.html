@@ -54,8 +54,8 @@
     let st2 = "laptop";
     console.log(st2.toUpperCase());
 
-    // 8. count vowels and consonants
-    let p= "NoteBook", len1= p.length; vowels = 0, consonants=0;
+    // 8. count vowels &{}[], and consonants
+    let p= "NoteBook", len1= p.length, vowels = 0, consonants=0;
     for(let i=0;i<len1;i++){
         if(p[i]=="a"|| p[i]=="e"|| p[i]=="i"|| p[i]=="o"|| p[i]=="u"){
             vowels += 1;
@@ -76,42 +76,38 @@
     console.log(rev);
 
     // 10. count totle no. of words
-    let t= ["apple","orange","mango"], count= 0;
+    // Hello my name is Anita 
+    let t= "Hello my name is Anita ", count= 1;
     for(let i=0;i<t.length;i++){
-        count +=1;
-    }
-     console.log(count);
-
-
-
-     // 11. check palindrome
-     let A = "RACECAR", ans2= " ";
-     for(let i=0;i<A.length;i++){
-        for(let j=A.length-1;j>=0;j--){
-            if(A[i]==A[j]){
-                ans2 = "string is palindrome"; 
-            }
-            else{
-                ans2 = "string is not palindrome"
-            }
+        
+        if(t[i] == " ") {
+        
+            count += 1;
+            
         }
-        console.log(ans2);
-     }
+    
+    }
+    console.log(count);
 
-     // 12. reverse order of wordsin string
 
-     let cap = ["racecar","apple", "phone"], v = " ";
-     for(let i=cap.length-1;i>=0;i--){
-            v = v+ " " + cap[i]; 
-     }
-     console.log( v);
+     
+     // 12. reverse order of words in string
 
+        let cap = "Hello my name is Anita", v = " ";
+        for(let i=0;i<cap.length;i++){
+            v = cap[i]+v; 
+            
+        }
+        console.log( v);
+
+        
      // 13. find first occurrences of a character in given string
 
      let char= "lowercase", char1 = "o", ans3 = " ";
      for(let i=0;i<char.length;i++){
         if(char1==char[i]){
             ans3 = i;
+            break;
         }
        
      } 
@@ -128,6 +124,9 @@
         console.log(last);
 
 
+        
+  
+
     // 15.count all occurrences of a char in string
       let qus = "https://docs.google.com/document/d/1KInyKQqgsBHXFWen15pl3wUoAvqvvUo3PHjFMITsrMY/edit"
       let p1= "o", total=0;
@@ -142,9 +141,7 @@
 
             for (let i = 0; i < e1.length; i++) 
             {
-                if (e2==e1.charAt(i)) 
-                {
-                    e1 = e1.substring(0, i) + e1.substring(i + 1);
+                if(e2==e1[i]){
                     break;
                 }
             }
@@ -169,25 +166,18 @@
 
     // 19. remove all occurrences of a character from string.
             let t1= "University";
-            let t2= "i";
+            let t2= "i",t3=" ";
 
             for (let i = 0; i < t1.length; i++) 
             {
-                if (t2==t1.charAt(i)) 
-                {
-                    t1 = t1.substring(0, i) + t1.substring(i + 1);
-                    break;
+                if(t2==t1[i]){ 
+                    console.log(t1[i]);
+                    i=i+1;//3
+                    
                 }
+                t3=t3+t1[i];
             }
-            for (let i = t1.length- 1; i > -1; i--)
-                {
-                    if (t2== t1.charAt(i)) 
-                    {
-                        t1= t1.substring(0, i) + r1.substring(i + 1);
-                        break;
-                    }
-                }
-            console.log(t1);
+            console.log(t3);
 
     // 20. find first occurrence of a word in a given string
     let f1= ["University","School","Book","Table","School"]
@@ -328,28 +318,44 @@
 
       
     // search all occurrences of a word in given string.
-    let k1= ["University","School","Book","Table","School"]
+    let k1= "UniversitySchoolTableSchool";
     let k2 = "School", k3 = " ";
     for(let i=0;i<k1.length;i++){
-        if(k2==k1[i]){
-            k3 = i;
+        
+            let count = 0;
+            for(let j = 0;j< k2.length;j++){
+                
+                if(k1[i+j] == k2[j]){
+                    count = count + 1;
+                
+                }
+                
+            }
+            if(count == k2.length){
+                k3= i;
+                
+            }
+            else{
+                continue;
+            }
+            console.log(k3); 
         }
-        console.log(k3);
-     } 
-     
 
   
 // trim leading white space characters from given string
-    let j1 = "   University";
-    let j2 = " ";
+let j1 = "   University";
+    let j2 = " ";startIndex= 0;
+    
     for (let i = 0; i< j1.length; i++) {
-        if (j1[i] != " ") {
-            j2= j1.substring(i);
-            break;
+        if(j1[i]==" "){
+            continue;
         }
+        else{
+            j2=j2+j1[i];
+        }
+        
     }
     console.log(j2);
-
 
 //trim trailing white space characters from given string
 let w1 = "University ";
@@ -537,6 +543,24 @@ for (let i = w1.length-1; i>=0; i--) {
         text_z = text_z + text2[k];
     }
     console.log(text_z);
+
+
+    //11. check palindrome
+    let A = "noon",m= A.length,found1=0,ans2=" ";      
+    for(let i=0;i<m/2;i++){
+        if(A[i]!=A[m-i-1]){
+            found1= 1;
+            break;
+        }
+        }
+    if(found==0){
+        ans2="Palindrome"
+        }
+    else{
+            ans2=" not Palindrome"
+        }
+
+    console.log(ans2);
             
 </script>
 </html>

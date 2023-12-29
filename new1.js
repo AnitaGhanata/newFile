@@ -39,24 +39,6 @@ let q2= "g", q3 = " ";
         console.log(q3);
         
     }
-
-
-
-    // 19. remove all occurrences of a character from string.
-    let t1= "University";
-    let t2= "i",t3=" ";
-
-    for (let i = 0; i < t1.length; i++) 
-    {
-        if(t2==t1[i]){ 
-            console.log(t1[i]);
-            i=i+1;//3
-            
-        }
-        t3=t3+t1[i];
-    }
-    console.log(t3);
-
    
     // 13. find first occurrences of a character in given string
 
@@ -354,20 +336,74 @@ for(let i=0;i<g1.length;i++){
 
 
 //  toggle case
-let m1= "UniVerSity", toggled="";
+let l1= "UniVerSity", toggled="";
     
      
 for(let i=0;i<m1.length;i++){
    console.log(m1)
-   if(m1[i]==(m1[i].toUpperCase())){
-       toggled+= m1[i].toLowerCase();
+   if(l1[i]==(l1[i].toUpperCase())){
+       toggled+= l1[i].toLowerCase();
        
    }
    else{
-       toggled+=m1[i].toUpperCase();
+       toggled+=l1[i].toUpperCase();
        
    }
 }
 console.log(toggled);
+
+
+
+//  find total number of alphabets, digits or special character in a string.
+let h1 = "as3bi#3/wer2bhjgj2@"
+let alph=0, digit=0, spec=0, answr= 0;
+for(let i=0;i<h1.length;i++){
+   if(h1[i]>='a' && h1[i]<='z'|| h1[i]>='A'&& h1[i]<='Z'){
+       alph +=1;
+
+   }
+   else if(h1[i]>'0' && h1[i]<='9'){
+       digit+=1;
+   }
+   else{
+       spec+=1;
+   }
+   
+   
+
+}
+console.log(alph, digit, spec);
+
+// 19. remove all occurrences of a character from string.
+let t1= "University";
+let t2= "i",t3=" ";
+
+for (let i = 0; i < t1.length; i++) 
+{
+    if(t2==t1[i]){ 
+        console.log(t1[i]);
+        i=i+1;//3
+        
+    }
+    t3=t3+t1[i];
+}
+console.log(t3);
+
+// 10. count totle no. of words
+
+let t= " Hello my name is Anita ", count2= 1;
+    for(let i=0;i<t.length;i++){
+        if(t[i]==" " && t[t.length-1]==" "){
+            t= t.trimStart();
+            t=t.trimEnd();
+        }
+        if(t[i] == " " && t[i+1]!=" ") {
+            
+            count2 += 1;
+            
+        }
+    
+    }
+    console.log(count);
 
     
