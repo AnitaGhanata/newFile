@@ -10,3 +10,4 @@ for (let i = r1.length- 1; i > -1; i--)
             }
         }
 console.log(r1);
+
