@@ -1,0 +1,1 @@
+//Q.37 Write a C program to trim both leading and trailing white space characters from given string.
